@@ -12,6 +12,13 @@ class TaskSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+
+        for($i = 1; $i <= 3; $i++)
+        {
+            $t = new \App\Models\Task();
+            $t->task = "Example task " . $i;
+            $t->done = false;
+            $t->save();
+        }
     }
 }
