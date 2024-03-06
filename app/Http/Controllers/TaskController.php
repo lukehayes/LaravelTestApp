@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Task;
 use Illuminate\Http\Request;
 
+use Inertia\Inertia;
+use Inertia\Response;
+
 class TaskController extends Controller
 {
     /**
@@ -38,8 +41,9 @@ class TaskController extends Controller
      */
     public function show(Task $task)
     {
-        //
+        return Inertia::render('Task/Show', ['task' => Task::first()]);
     }
+
 
     /**
      * Show the form for editing the specified resource.

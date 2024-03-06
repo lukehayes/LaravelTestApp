@@ -17,7 +17,4 @@ use App\Http\Controllers\TaskController;
 
 Route::get('/', [TaskController::class, 'index']);
 
-//Route::get('/', function () {
-    //return view('welcome');
-//});
-
+Route::get('/task', [TaskController::class, 'show']);

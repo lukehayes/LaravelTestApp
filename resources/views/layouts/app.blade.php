@@ -1,7 +1,10 @@
 <html>
     <head>
         <title>App Name - @yield('title')</title>
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7" media="print">
+
+
     </head>
     <body>
 
